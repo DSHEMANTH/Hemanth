@@ -3,10 +3,6 @@
 # example of the run script for running the word count
 
 # first I'll load all my dependencies
-apt-get install python-os
-apt-get install python-fileinput
-apt-get install python-glob
-apt-get install python-heapq
 
 # next I'll make sure that all my programs (written in Python in this example) have the proper permissions
 chmod a+x word_count.py
