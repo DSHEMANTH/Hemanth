@@ -7,7 +7,7 @@ import os
 import fileinput
 import glob
 # Changig Directory
-os.chdir('D:\wc_input')
+os.chdir('wc_input')
 #print os.getcwd()
 # Ordering the files in the directory in alphabetical order
 filenames=[]
@@ -26,6 +26,6 @@ for word in concatenate.split():
         wordcount[word] +=1
 #print wordcount
 # Writing the dictionary to a text file in output directory
-with open('D:/wc_output/wc_results.txt','w+') as out_file:
+with open('wc_output/wc_results.txt','w+') as out_file:
     for word in sorted(wordcount.items()):
         out_file.write("%s:%s\n" % word)
