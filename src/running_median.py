@@ -20,14 +20,14 @@ for file in sorted(glob.glob('*.txt')):    #  Sorts the files in alphabetical or
 concatenate="\n".join([open(f).read() for f in filenames])  # Concatenates the text of all files in new lines every time
 #print concatenate
 
-text_file=open("wc_output/output.txt",'w+')  # Creating a text file of all the concatenated text from all text files in the put directory to temp folder in C drive
+text_file=open("wc_output",'w+')  # Creating a text file of all the concatenated text from all text files in the put directory to temp folder in C drive
 text_file.seek(0)
 text_file.write(concatenate) # Writing text in concatenate
 text_file.close()
 
 # Genarating a list for number of words in each line
 words=[]
-with open('wc_output/output.txt','r') as in_file:
+with open('wc_output','r') as in_file:
     for line in in_file.readlines():
        words.append(len(line.split(' ')))
 #print words
@@ -67,7 +67,7 @@ for key in range(0,len(myDict)):
 #print medianList
 # Writing the list of running medians wc_output in directory
 counter=0
-with open('wc_output/med_results.txt','w+') as out_file:
+with open('wc_output','w+') as out_file:
     for item in medianList:
         out_file.write(str(medianList[counter])+"\n")
         counter +=1
