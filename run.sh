@@ -9,5 +9,5 @@ chmod a+x ./src/word_count.py
 chmod a+x ./src/running_median.py
 
 # finally I'll execute my programs, with the input directory wc_input and output the files in the directory wc_output
-python ./src/word_count.py ./wc_input ./wc_output
+python ./src/word_count.py ./wc_input ./wc_output/results.txt
 python ./src/running_median.py ./wc_input ./wc_output
