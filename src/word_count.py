@@ -26,6 +26,6 @@ for word in concatenate.split():
         wordcount[word] +=1
 #print wordcount
 # Writing the dictionary to a text file in output directory
-with open('wc_output','w+') as out_file:
+with open('./wc_output/result.txt','w+') as out_file:
     for word in sorted(wordcount.items()):
         out_file.write("%s:%s\n" % word)
